@@ -29,9 +29,8 @@ section a:hover {
 header {
     max-width: 575px;
     width: 80%;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    /* */
+    margin: 2rem auto 0;
     text-align: center;
 }
 
@@ -42,9 +41,7 @@ header {
 main {
     max-width: 575px;
     width: 80%;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
     text-align: center;
     background-color: white;
     border-top-left-radius:  0.313rem;
@@ -53,17 +50,19 @@ main {
 }
 
 
-/*==== EXEMPLO 1 ===*/
+/*==== EXEMPLO 1 ====*/
 
 #exemplo-1 div:nth-child(1) {
     margin-bottom: 1.25rem;
 }
 
-#exemplo-1 {
+#exemplo-1, #exemplo-2  {
     margin-bottom: 2rem;
 }
 
-/*==== EXEMPLO 2 ===*/
+
+
+/*==== EXEMPLO 2 ====*/
 
 #exemplo-2 button:not(button:first-child) {
     margin-top: 0.625rem;
@@ -71,6 +70,36 @@ main {
 
 #exemplo-2 .content a p:not(.first-p){
     margin-top: 10px;
+}
+
+
+/*==== GROUP CARDS ====*/
+
+#group-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#group-cards #group-card button:not(button:first-child) {
+    margin-top: 1rem;
+}
+
+#group-cards #group-card .content p:not(.first-p){
+    margin-top: 1rem;
+}
+
+#group-cards #group-card {
+    width: 48%;
+    margin: 1%;
+}
+
+#group-cards #group-card button{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    padding: 0.375rem;
+    border-radius: 0.25rem;
+    width: 100%;
 }
 
 
@@ -127,8 +156,7 @@ footer {
 
     max-width: 575px;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 2rem;
 
     background-color: #dc387063;
     border-bottom-right-radius: 0.313rem;
@@ -142,4 +170,23 @@ footer a:first-child {
 
 footer .fa-2x {
     font-size: 1.75rem;
+}
+
+
+
+@media (max-width: 760px) {
+
+    main #group-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    main #group-cards #group-card {
+        width: 100% !important;
+    }
+
+    main #group-cards #group-card .content {
+        padding: 0 !important;
+    }
 }
