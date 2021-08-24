@@ -156,7 +156,7 @@ footer {
 
     max-width: 575px;
     width: 80%;
-    margin: 0 auto 2rem;
+    margin: 0 auto 0.625rem;
 
     background-color: #dc387063;
     border-bottom-right-radius: 0.313rem;
@@ -172,7 +172,20 @@ footer .fa-2x {
     font-size: 1.75rem;
 }
 
+#sub-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    max-width: 575px;
+    width: 80%;
+    margin: 0 auto 2rem;
+}
+
+#sub-footer p {
+    margin-left: 0.375rem;
+}
 
 @media (max-width: 760px) {
 
