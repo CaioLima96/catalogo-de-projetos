@@ -185,6 +185,7 @@ footer .fa-2x {
 
 #sub-footer p {
     margin-left: 0.375rem;
+    font-size: 0.813rem;
 }
 
 @media (max-width: 760px) {
